@@ -1,11 +1,11 @@
 <?php
-    $a=10;
+    $a=10;//global scope
     
-    function abc($v=5){
+    function abc($v=5){//parametric scope
 
         global $a;
         
-        $sum=$a+$v;
+        $sum=$a+$v;//local scope
         return $sum;
     }
 
